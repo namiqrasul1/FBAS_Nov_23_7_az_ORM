@@ -1,13 +1,22 @@
-﻿using System.Data.SqlClient;
+﻿using System.Data;
+using System.Data.SqlClient;
 using System.Net;
 using Dapper;
 using Lesson1Dapper.Models;
 using Lesson1Dapper.Models.DTOs;
+using Microsoft.Extensions.Configuration;
 
 //var conStr = "Data Source=STHQ0118-01;Initial Catalog=Library;Integrated Security=true"; // for windows auth
 
 
-var conStr = "Data Source=STHQ0118-01;Initial Catalog=Library;User ID=admin;Password=admin"; // for sql auth
+//var conStr = "Data Source=STHQ0118-01;Initial Catalog=Library;User ID=admin;Password=admin"; // for sql auth
+
+var builder = new ConfigurationBuilder();
+builder.AddJsonFile(@"C:\Users\namiqrasullu\Desktop\FBAS_Nov_23_7_az_ORM\Lesson1Dapper\Lesson1Dapper\appsettings.json");
+
+var config = builder.Build();
+
+var conStr = config.GetConnectionString("Default");
 
 using var sqlConnection = new SqlConnection(conStr);
 
@@ -91,11 +100,11 @@ using var sqlConnection = new SqlConnection(conStr);
 //    Console.WriteLine(book.Name);
 //}
 
-var sql = "SELECT * FROM Books WHERE Pages < @p";
+//var sql = "SELECT * FROM Books WHERE Pages < @p";
 
-var books = sqlConnection.Query(sql, param: new { p = 100 }).ToList();
+//var books = sqlConnection.Query(sql, param: new { p = 100 }).ToList();
 
-books.ForEach(b => Console.WriteLine(b));
+//books.ForEach(b => Console.WriteLine(b));
 
 //new Book { Name = " asd" };
 
@@ -103,9 +112,116 @@ books.ForEach(b => Console.WriteLine(b));
 
 #region Spesific Columns
 
-var query = "SELECT [Name], Pages, Quantity FROM Books";
+//var query = "SELECT [Name], Pages, Quantity FROM Books";
 
-var result = sqlConnection.Query<BookDto>(query);
+//var result = sqlConnection.Query<BookDto>(query);
+
+#endregion
+
+#region CreateUpdateDelete
+
+//var cmd = "insert into Authors(Id, FirstName, LastName) Values(@Id, @FirstName, @LastName)";
+
+//var realAuthor = new Author { Id = 22, FirstName = "Murad", LastName = "Babayev" };
+//sqlConnection.Execute(cmd, param: author);
+//var anonymousAuthor = new { Id = 23, FirstName = "Murad", LastName = "Ahmedov" };
+//sqlConnection.Execute(cmd, anonymousAuthor);
+
+//var authors = new List<Author>
+//{
+//    new() { Id = 22, FirstName = "Murad", LastName = "Ahmedov" },
+//    new() { Id = 23, FirstName = "Murad", LastName = "Babayev" },
+//};
+
+//var result = sqlConnection.Execute(cmd, authors);
+
+//var cmd = "DELETE FROM Authors Where Id = @id";
+
+//sqlConnection.Execute(cmd, param: new { id = 23 });
+
+
+//var cmd = "Update Authors Set LastName = @lastName Where Id = @id";
+
+//sqlConnection.Execute(cmd, param: new { id = 21, lastName = "Nesbo" });
+
+#endregion
+
+#region RelationShips
+
+//var sqlQuery = "Select * From Authors A Join Books B On A.Id = B.Id_Author";
+
+//var books = sqlConnection.Query<Author, Book, Book>(sqlQuery,
+//    map: (author, book) =>
+//    {
+//        book.Author = author;
+//        return book;
+//    },
+//    splitOn: "Id").ToList();
+
+//foreach (var book in books)
+//    Console.WriteLine($"{book.Name} - {book.Author.FirstName}");
+
+
+
+//var sqlQuery = "Select * From Authors A Join Books B On A.Id = B.Id_Author";
+
+//var authorDict = new Dictionary<int, Author>();
+
+//var authors = sqlConnection.Query<Author, Book, Author>(sqlQuery,
+//    map: (author, book) =>
+//    {
+//        if(!authorDict.TryGetValue(author.Id, out var currentAuthor))
+//        {
+//            currentAuthor = author;
+//            authorDict.Add(author.Id, currentAuthor);
+//        }
+//        book.Author = currentAuthor;
+//        currentAuthor.Books.Add(book);
+//        return currentAuthor;
+//    },
+//    splitOn: "Id").ToList();
+
+
+
+#endregion
+
+#region Procedure
+
+//var procName = "sp_get_author_books";
+
+//var result = sqlConnection.Query(procName, commandType: CommandType.StoredProcedure);
+
+//var procName = "sp_get_author_books_by_id";
+
+//var result = sqlConnection.Query<AuthorBookDto>(procName, param: new { authorId = 5 }, commandType: CommandType.StoredProcedure);
+
+//var procName = "sp_get_author_books_with_count";
+
+//var parameters = new DynamicParameters();
+//parameters.Add("authorId", 5, DbType.Int32, ParameterDirection.Input);
+//parameters.Add("count", null, DbType.Int32, ParameterDirection.Output);
+
+//var result = sqlConnection.Query(procName, parameters, commandType: CommandType.StoredProcedure);
+
+//var count = parameters.Get<int>("count");
+//Console.WriteLine(count);
+
+
+
+#endregion
+
+#region Querying Mutiple Results
+
+var query = "Select * from books where Id_Author = @AuthorId;" +
+            "Select * from Authors where Id = @AuthorId;";
+
+using(var mult = sqlConnection.QueryMultiple(query, param: new { AuthorId = 5 }))
+{
+    var books = mult.Read<Book>().ToList();
+    var author = mult.ReadFirst<Author>();
+}
+
+
 
 #endregion
 

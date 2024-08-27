@@ -12,4 +12,5 @@ internal class Book
     public int Id_Press { get; set; }
     public string Comment { get; set; }
     public int Quantity { get; set; }
+    public Author Author { get; set; }
 }
