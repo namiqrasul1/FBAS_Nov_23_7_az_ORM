@@ -163,23 +163,23 @@ using var sqlConnection = new SqlConnection(conStr);
 
 
 
-//var sqlQuery = "Select * From Authors A Join Books B On A.Id = B.Id_Author";
+var sqlQuery = "Select * From Authors A Join Books B On A.Id = B.Id_Author";
 
-//var authorDict = new Dictionary<int, Author>();
+var authorDict = new Dictionary<int, Author>();
 
-//var authors = sqlConnection.Query<Author, Book, Author>(sqlQuery,
-//    map: (author, book) =>
-//    {
-//        if(!authorDict.TryGetValue(author.Id, out var currentAuthor))
-//        {
-//            currentAuthor = author;
-//            authorDict.Add(author.Id, currentAuthor);
-//        }
-//        book.Author = currentAuthor;
-//        currentAuthor.Books.Add(book);
-//        return currentAuthor;
-//    },
-//    splitOn: "Id").ToList();
+var authors = sqlConnection.Query<Author, Book, Author>(sqlQuery,
+    map: (author, book) =>
+    {
+        if (!authorDict.TryGetValue(author.Id, out var currentAuthor))
+        {
+            currentAuthor = author;
+            authorDict.Add(author.Id, currentAuthor);
+        }
+        book.Author = currentAuthor;
+        currentAuthor.Books.Add(book);
+        return currentAuthor;
+    },
+    splitOn: "Id").ToList();
 
 
 
