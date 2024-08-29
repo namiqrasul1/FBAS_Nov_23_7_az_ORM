@@ -3,19 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\namiqrasullu\\Desktop\\FBAS_Nov_23_7_az_ORM\\Lesson3DapperPractice\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6669C753-998F-4811-BA43-DC9CE9160C01}|Lesson3DapperPractice\\Lesson3DapperPractice.csproj|c:\\users\\namiqrasullu\\desktop\\fbas_nov_23_7_az_orm\\lesson3dapperpractice\\lesson3dapperpractice\\lesson3dapperpractice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6669C753-998F-4811-BA43-DC9CE9160C01}|Lesson3DapperPractice\\Lesson3DapperPractice.csproj|solutionrelative:lesson3dapperpractice\\lesson3dapperpractice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6669C753-998F-4811-BA43-DC9CE9160C01}|Lesson3DapperPractice\\Lesson3DapperPractice.csproj|c:\\users\\namiqrasullu\\desktop\\fbas_nov_23_7_az_orm\\lesson3dapperpractice\\lesson3dapperpractice\\data\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6669C753-998F-4811-BA43-DC9CE9160C01}|Lesson3DapperPractice\\Lesson3DapperPractice.csproj|solutionrelative:lesson3dapperpractice\\data\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6669C753-998F-4811-BA43-DC9CE9160C01}|Lesson3DapperPractice\\Lesson3DapperPractice.csproj|c:\\users\\namiqrasullu\\desktop\\fbas_nov_23_7_az_orm\\lesson3dapperpractice\\lesson3dapperpractice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6669C753-998F-4811-BA43-DC9CE9160C01}|Lesson3DapperPractice\\Lesson3DapperPractice.csproj|C:\\Users\\namiqrasullu\\Desktop\\FBAS_Nov_23_7_az_ORM\\Lesson3DapperPractice\\lesson3dapperpractice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6669C753-998F-4811-BA43-DC9CE9160C01}|Lesson3DapperPractice\\Lesson3DapperPractice.csproj|solutionrelative:lesson3dapperpractice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6669C753-998F-4811-BA43-DC9CE9160C01}|Lesson3DapperPractice\\Lesson3DapperPractice.csproj|c:\\users\\namiqrasullu\\desktop\\fbas_nov_23_7_az_orm\\lesson3dapperpractice\\lesson3dapperpractice\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6669C753-998F-4811-BA43-DC9CE9160C01}|Lesson3DapperPractice\\Lesson3DapperPractice.csproj|C:\\Users\\namiqrasullu\\Desktop\\FBAS_Nov_23_7_az_ORM\\Lesson3DapperPractice\\lesson3dapperpractice\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6669C753-998F-4811-BA43-DC9CE9160C01}|Lesson3DapperPractice\\Lesson3DapperPractice.csproj|solutionrelative:lesson3dapperpractice\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6669C753-998F-4811-BA43-DC9CE9160C01}|Lesson3DapperPractice\\Lesson3DapperPractice.csproj|c:\\users\\namiqrasullu\\desktop\\fbas_nov_23_7_az_orm\\lesson3dapperpractice\\lesson3dapperpractice\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6669C753-998F-4811-BA43-DC9CE9160C01}|Lesson3DapperPractice\\Lesson3DapperPractice.csproj|C:\\Users\\namiqrasullu\\Desktop\\FBAS_Nov_23_7_az_ORM\\Lesson3DapperPractice\\lesson3dapperpractice\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6669C753-998F-4811-BA43-DC9CE9160C01}|Lesson3DapperPractice\\Lesson3DapperPractice.csproj|solutionrelative:lesson3dapperpractice\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -31,19 +35,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Lesson3DapperPractice",
+              "DocumentMoniker": "C:\\Users\\namiqrasullu\\Desktop\\FBAS_Nov_23_7_az_ORM\\Lesson3DapperPractice\\Lesson3DapperPractice\\Lesson3DapperPractice.csproj",
+              "RelativeDocumentMoniker": "Lesson3DapperPractice\\Lesson3DapperPractice.csproj",
+              "ToolTip": "C:\\Users\\namiqrasullu\\Desktop\\FBAS_Nov_23_7_az_ORM\\Lesson3DapperPractice\\Lesson3DapperPractice\\Lesson3DapperPractice.csproj",
+              "RelativeToolTip": "Lesson3DapperPractice\\Lesson3DapperPractice.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-29T05:08:29.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Database.cs",
               "DocumentMoniker": "C:\\Users\\namiqrasullu\\Desktop\\FBAS_Nov_23_7_az_ORM\\Lesson3DapperPractice\\Lesson3DapperPractice\\Data\\Database.cs",
               "RelativeDocumentMoniker": "Lesson3DapperPractice\\Data\\Database.cs",
               "ToolTip": "C:\\Users\\namiqrasullu\\Desktop\\FBAS_Nov_23_7_az_ORM\\Lesson3DapperPractice\\Lesson3DapperPractice\\Data\\Database.cs",
               "RelativeToolTip": "Lesson3DapperPractice\\Data\\Database.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAA9wCMAAAA7AAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowCMAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-27T09:42:08.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\namiqrasullu\\Desktop\\FBAS_Nov_23_7_az_ORM\\Lesson3DapperPractice\\Lesson3DapperPractice\\Models\\Student.cs",
               "RelativeDocumentMoniker": "Lesson3DapperPractice\\Models\\Student.cs",
@@ -51,12 +68,11 @@
               "RelativeToolTip": "Lesson3DapperPractice\\Models\\Student.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T09:41:19.184Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T09:41:19.184Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\namiqrasullu\\Desktop\\FBAS_Nov_23_7_az_ORM\\Lesson3DapperPractice\\Lesson3DapperPractice\\Models\\Book.cs",
               "RelativeDocumentMoniker": "Lesson3DapperPractice\\Models\\Book.cs",
@@ -64,12 +80,11 @@
               "RelativeToolTip": "Lesson3DapperPractice\\Models\\Book.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T09:40:41.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T09:40:41.865Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\namiqrasullu\\Desktop\\FBAS_Nov_23_7_az_ORM\\Lesson3DapperPractice\\Lesson3DapperPractice\\Program.cs",
               "RelativeDocumentMoniker": "Lesson3DapperPractice\\Program.cs",
@@ -77,8 +92,7 @@
               "RelativeToolTip": "Lesson3DapperPractice\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T09:39:38.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T09:39:38.524Z"
             }
           ]
         }
