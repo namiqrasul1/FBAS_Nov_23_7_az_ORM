@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\namiqrasullu\\Desktop\\FBAS_Nov_23_7_az_ORM\\Lesson5CodeFirstRelationships\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{088ABC91-690E-4540-83A6-AABD8881AC77}|Lesson5CodeFirstRelationships\\Lesson5CodeFirstRelationships.csproj|c:\\users\\namiqrasullu\\desktop\\fbas_nov_23_7_az_orm\\lesson5codefirstrelationships\\lesson5codefirstrelationships\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088ABC91-690E-4540-83A6-AABD8881AC77}|Lesson5CodeFirstRelationships\\Lesson5CodeFirstRelationships.csproj|solutionrelative:lesson5codefirstrelationships\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\namiqrasullu\\Desktop\\FBAS_Nov_23_7_az_ORM\\Lesson5CodeFirstRelationships\\Lesson5CodeFirstRelationships\\Program.cs",
+              "RelativeDocumentMoniker": "Lesson5CodeFirstRelationships\\Program.cs",
+              "ToolTip": "C:\\Users\\namiqrasullu\\Desktop\\FBAS_Nov_23_7_az_ORM\\Lesson5CodeFirstRelationships\\Lesson5CodeFirstRelationships\\Program.cs",
+              "RelativeToolTip": "Lesson5CodeFirstRelationships\\Program.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T11:35:11.082Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
